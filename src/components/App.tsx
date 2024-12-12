@@ -1,4 +1,4 @@
-import React, {useEffect, useState, createContext} from 'react';
+import React, {useEffect, useState} from 'react';
 import '../style/App.css';
 import { throttle } from '../helpers/throttle';
 import data from "../tickets.json"
@@ -23,7 +23,7 @@ function App() {
       window.removeEventListener("scroll", loadMoreTickets)
     }
   },[filters])
-
+  
   function filterTickets(tickets:ITicket[]):ITicket[] {
     let filtersOn = filters.filter(filter => filter.on)
     let filtered = tickets.filter((ticket) => {
@@ -33,7 +33,6 @@ function App() {
       })
       return pass
     })
-    // console.log(tickets,filtered,filtersOn)
     return filtered
   }
 

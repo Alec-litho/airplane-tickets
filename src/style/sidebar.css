@@ -45,16 +45,33 @@ ul {
     padding: 0;
 }
 .stop-option {
+    cursor: pointer;
     display: flex;
+    align-items: center;
 }
 .stop-option input {
     width: 25px;
+    height: 25px;
+    cursor: pointer;
+
 }
-.stop-option p {
+.title, .titleOn {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.title p, .titleOn p {
     margin-left: 10px;
     color: gray;
     margin: 10px;
 }
+.title .onhover {display: none;}
+.titleOn .onhover {
+    color: var(--main-color);
+    font-weight: bold;
+    opacity: 60%;
+}
+.onhover:hover {opacity: 80%;}
 
 .currency-options button:nth-of-type(1) { border-top-left-radius: 5px; border-bottom-left-radius: 5px;}
 .currency-options button:nth-of-type(3) { border-top-right-radius: 5px; border-bottom-right-radius: 5px}

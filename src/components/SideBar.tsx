@@ -3,24 +3,31 @@ import "../style/sidebar.css"
 
 export function SideBar({filters, setFilters}:ISideBarProps) {
 
-
     function handleFiltersChange(e: any) {
         let p = [...e.target.parentNode.childNodes][1]//get <p> tag
         let target = filters.filter(option => option.desc === p.innerText)[0]
         setFilters((prev:IOption[]) => {
             if(target.value===null) return prev.map(filter => {return {...filter, on: target.on? false : true}})
-            return prev.map((filter:IOption) => {
-                if(filter.desc === target.desc) {
-                    return {...target, on:!target.on}
-                } else {
-                    return filter
-                }
-            })
+            return prev.map((filter:IOption) => {return {...filter, on: filter.desc === target.desc ? !filter.on : filter.on}})
         })
         return 
     }
-
-
+    function setOnlyFilter(e:any) {
+        let p = [...e.target.parentNode.childNodes][0]
+        let target = filters.filter(option => option.desc === p.innerText)[0]
+        setFilters((prev:IOption[]) => {
+            return prev.map((filter:IOption) => {return {...filter, on: filter.desc === target.desc ? true : false}})
+        })
+    }
+    
+    function onOptionHover(e:any) {
+        if(e.target.className!=="title") return
+        e.target.className = "titleOn"
+    }
+    function onOptionHoverEnd(e:any) {
+        if(e.target.className!=="titleOn") return
+        e.target.className = "title"
+    }
     return (
         <div className="sidebar">
         <div className="currency-block">
@@ -40,7 +47,11 @@ export function SideBar({filters, setFilters}:ISideBarProps) {
                         // Because stopOptions array is static we can use indexes as keys
                         <li key={indx} className="stop-option">
                             <input type="checkbox" checked={option.on} className="checkmark" onClick={handleFiltersChange}/>
-                            <p>{option.desc}</p>
+                            <div className="title" onMouseEnter={onOptionHover} onMouseLeave={onOptionHoverEnd}>
+                                <p>{option.desc}</p>
+                                <p className="onhover" onClick={setOnlyFilter}>ТОЛЬКО</p>
+                            </div>
+                          
                         </li>
                     )
                 })}

@@ -7,7 +7,7 @@ export function Ticket(data: ITicket) {
         <div className="ticket">
             <div className="leftSide">
                 <img src={require('../assets/turkish_airlines.png')} alt="#" className="companyLogo" />
-                <button className="buy">Купить<br/> за {data.price}</button>
+                <button className="buy">Купить<br/> за {data.price} ₽</button>
             </div>
             <div className="border"></div>
 
