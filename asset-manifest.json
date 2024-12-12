@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/static/css/main.bbf74bc4.css",
+    "main.js": "/static/js/main.8bbf78f2.js",
+    "static/media/airport.png": "/static/media/airport.730bc56504e7e27c51af.png",
+    "static/media/airplane.png": "/static/media/airplane.cdf6d56ffabb429ab257.png",
+    "index.html": "/index.html",
+    "main.bbf74bc4.css.map": "/static/css/main.bbf74bc4.css.map",
+    "main.8bbf78f2.js.map": "/static/js/main.8bbf78f2.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.bbf74bc4.css",
+    "static/js/main.8bbf78f2.js"
+  ]
+}
