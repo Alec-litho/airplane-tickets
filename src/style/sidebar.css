@@ -1,0 +1,60 @@
+@import "./global.css";
+
+.sidebar {
+    box-sizing: border-box;
+    width: 30%;
+    height: 450px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+h3 {
+    color: gray;
+}
+
+.currency-options {
+    width: 100%;
+    height: auto;
+}
+.currency-option {
+    width: calc(100% / 3);
+    min-height: 50px;
+    border: 1px solid gray;
+    background-color: white;
+    color: var(--main-color);
+    font-weight: bold;
+}
+.currency-option:hover {
+    cursor: pointer;
+    transition: .2s;
+    border: 1px solid var(--main-color);
+    background-color: var(--main-color-hover);
+}
+.currency-option:active {
+    cursor: pointer;
+    transition: .2s;
+    border: 1px solid var(--main-color);
+    background-color: var(--main-color);
+    color: white;
+}
+ul {
+    padding: 0;
+}
+.stop-option {
+    display: flex;
+}
+.stop-option input {
+    width: 25px;
+}
+.stop-option p {
+    margin-left: 10px;
+    color: gray;
+    margin: 10px;
+}
+
+.currency-options button:nth-of-type(1) { border-top-left-radius: 5px; border-bottom-left-radius: 5px;}
+.currency-options button:nth-of-type(3) { border-top-right-radius: 5px; border-bottom-right-radius: 5px}

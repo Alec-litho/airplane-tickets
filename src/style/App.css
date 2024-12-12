@@ -1,0 +1,37 @@
+/* @import "./reset.css";
+ */
+
+
+.App {
+    width: 100vw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(223, 232, 238);
+}
+
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 50px 0 50px 0;
+}
+.header img {
+    width: 75px;
+    height: auto;
+}
+
+.body {
+    width: 60%;
+    display: flex;
+    gap: 40px;
+}
+
+.main {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
