@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/airplane-tickets/static/css/main.bbf74bc4.css",
+    "main.css": "/airplane-tickets/static/css/main.7de2ec4d.css",
     "main.js": "/airplane-tickets/static/js/main.70b0c8c7.js",
     "static/media/airport.png": "/airplane-tickets/static/media/airport.730bc56504e7e27c51af.png",
     "static/media/airplane.png": "/airplane-tickets/static/media/airplane.cdf6d56ffabb429ab257.png",
     "index.html": "/airplane-tickets/index.html",
-    "main.bbf74bc4.css.map": "/airplane-tickets/static/css/main.bbf74bc4.css.map",
+    "main.7de2ec4d.css.map": "/airplane-tickets/static/css/main.7de2ec4d.css.map",
     "main.70b0c8c7.js.map": "/airplane-tickets/static/js/main.70b0c8c7.js.map"
   },
   "entrypoints": [
-    "static/css/main.bbf74bc4.css",
+    "static/css/main.7de2ec4d.css",
     "static/js/main.70b0c8c7.js"
   ]
 }
