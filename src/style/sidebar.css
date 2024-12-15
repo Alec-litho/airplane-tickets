@@ -59,6 +59,7 @@ ul {
     width: 100%;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 .title p, .titleOn p {
     margin-left: 10px;
@@ -67,6 +68,8 @@ ul {
 }
 .title .onhover {display: none;}
 .titleOn .onhover {
+    margin: 0;
+    font-size: 13px;
     color: var(--main-color);
     font-weight: bold;
     opacity: 60%;

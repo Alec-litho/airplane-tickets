@@ -23,6 +23,7 @@
 
 .body {
     width: 60%;
+    height: auto;
     display: flex;
     gap: 40px;
 }
